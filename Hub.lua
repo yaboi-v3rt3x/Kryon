@@ -55,10 +55,10 @@ local PlayerJumpPower = homeTab:CreateInput({
 local Divider = homeTab:CreateDivider()
 
 local changelogLabel = Tab:CreateLabel("Changelog", "list")
-local v082526550P = homeTab:CreateParagraph({Title = "Version 08.25.26-550P", Content = "- Created Kryon\n+ Added Ice Cream Factory Tycoon to Games List"})
+local v082526600P = homeTab:CreateParagraph({Title = "Version 08.25.26-600P", Content = "- Created Kryon\n+ Added Ice Cream Factory Tycoon to Games List"})
 
 local Divider = homeTab:CreateDivider()
-local versionLabel = homeTab:CreateLabel("Version 08.25.26-550P", "info")
+local versionLabel = homeTab:CreateLabel("Version 08.25.26-600P", "info")
 
 -- #=# Animation Tab #=# --
 local animationTab = Window:CreateTab("Animations", "person-standing")
