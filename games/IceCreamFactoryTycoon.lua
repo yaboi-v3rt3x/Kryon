@@ -134,4 +134,4 @@ local versionLabel = hubTab:CreateLabel("Version 08.25.26-600P", "info")
 -- #=# Changelog Tab #=# -- 
 local changelogTab = Window:CreateTab("Changelog", "list")
 
-local v082526600P = homeTab:CreateParagraph({Title = "Version 08.25.26-600P", Content = "- Created Sub Hub"})
+local v082526600P = changelogTab:CreateParagraph({Title = "Version 08.25.26-600P", Content = "- Created Sub Hub"})
