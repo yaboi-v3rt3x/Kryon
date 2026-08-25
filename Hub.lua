@@ -52,11 +52,18 @@ local PlayerJumpPower = homeTab:CreateInput({
     end,
 })
 
+local Divider = homeTab:CreateDivider()
+
+local changeLog = homeTab:CreateParagraph({Title = "Version 08.25.26-550P ChangeLog", Content = "- Created Kryon\n+ Added Ice Cream Factory Tycoon to Games List"})
+
+local Divider = homeTab:CreateDivider()
+local versionLabel = homeTab:CreateLabel("Version 08.25.26-550P", "info")
+
 -- #=# Animation Tab #=# --
-local animationTab = Window:CreateTab("Animations", 4483362458)
+local animationTab = Window:CreateTab("Animations", "person-standing")
 
 local Animations = animationTab:CreateSection("Animations")
-local ComingSoon = animationTab:CreateLabel("Coming in a Future Update")
+local Note = animationTab:CreateLabel("Coming in a Future Update")
 
 local AnimationPack = animationTab:CreateSection("Animation Packs")
 local AnimationPackNotice = animationTab:CreateParagraph({Title = "Attention", Content = "Animation Packs only work in R15, using this to change your animation pack in R6 will break your animations!"})
@@ -448,7 +455,7 @@ local FEZombie = animationTab:CreateButton({
 })
 
 -- #=# Games Tab #=# --
-local gamesTab = Window:CreateTab("Games", 4483362458)
+local gamesTab = Window:CreateTab("Games", "gamepad")
 
 local IceCreamFactoryTycoon = gamesTab:CreateButton({
    Name = "Ice Cream Factory Tycoon",
@@ -458,7 +465,7 @@ local IceCreamFactoryTycoon = gamesTab:CreateButton({
 })
 
 -- #=# Settings Tab #=# --
-local settingsTab = Window:CreateTab("Settings", 6578871732)
+local settingsTab = Window:CreateTab("Settings", "settings")
 
 local autoOpen = settingsTab:CreateToggle({
    Name = "Auto-Open Game Hubs",
