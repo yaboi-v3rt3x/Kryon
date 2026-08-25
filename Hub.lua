@@ -54,7 +54,7 @@ local PlayerJumpPower = homeTab:CreateInput({
 
 local Divider = homeTab:CreateDivider()
 
-local changelogLabel = Tab:CreateLabel("Changelog", "list")
+local changelogLabel = homeTab:CreateLabel("Changelog", "list")
 local v082526600P = homeTab:CreateParagraph({Title = "Version 08.25.26-600P", Content = "- Created Kryon\n+ Added Ice Cream Factory Tycoon to Games List"})
 
 local Divider = homeTab:CreateDivider()
