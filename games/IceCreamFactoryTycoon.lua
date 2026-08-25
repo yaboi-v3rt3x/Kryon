@@ -43,7 +43,7 @@ local Window = Rayfield:CreateWindow({
    DisableBuildWarnings = false,
 
    ConfigurationSaving = {
-      Enabled = false,
+      Enabled = true,
       FolderName = "Kryon",
       FileName = "IceCreamFactoryTycoon"
    },
@@ -58,7 +58,7 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "Kryon",
       Subtitle = "Key System",
-      Note = "No method of obtaining the key is provided",
+      Note = "Kryon is keyless.",
       FileName = "Key",
       SaveKey = true,
       GrabKeyFromSite = false,
@@ -66,9 +66,10 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Home", "home")
+-- #=# Hub Tab #=# -- 
+local hubTab = Window:CreateTab("Home", "home")
 
-local obbyToggle = Tab:CreateToggle({
+local obbyToggle = hubTab:CreateToggle({
    Name = "Auto-Complete Obby",
    CurrentValue = false,
    Flag = "obbyToggle",
@@ -83,7 +84,7 @@ local obbyToggle = Tab:CreateToggle({
    end,
 })
 
-local sellToggle = Tab:CreateToggle({
+local sellToggle = hubTab:CreateToggle({
    Name = "Auto-Sell Ice Cream",
    CurrentValue = false,
    Flag = "sellToggle",
@@ -102,7 +103,7 @@ local sellToggle = Tab:CreateToggle({
    end,
 })
 
-local buyToggle = Tab:CreateToggle({
+local buyToggle = hubTab:CreateToggle({
    Name = "Auto-Buy Upgrades",
    CurrentValue = false,
    Flag = "buyToggle",
@@ -126,6 +127,11 @@ local buyToggle = Tab:CreateToggle({
    end,
 })
 
-local Divider = Tab:CreateDivider()
-local factoryLabel = Tab:CreateLabel("Factory: " .. plr.Team.Name, "factory")
-local versionLabel = Tab:CreateLabel("Version 08.25.26-515P", "info")
+local Divider = hubTab:CreateDivider()
+local factoryLabel = hubTab:CreateLabel("Factory: " .. plr.Team.Name, "factory")
+local versionLabel = hubTab:CreateLabel("Version 08.25.26-600P", "info")
+
+-- #=# Changelog Tab #=# -- 
+local changelogTab = Window:CreateTab("Changelog", "list")
+
+local v082526600P = homeTab:CreateParagraph({Title = "Version 08.25.26-600P", Content = "- Created Sub Hub"})
