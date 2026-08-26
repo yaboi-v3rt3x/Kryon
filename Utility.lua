@@ -76,6 +76,9 @@ local ProductFucker = homeTab:CreateButton({
    end,
 })
 
+local Divider = homeTab:CreateDivider()
+local versionLabel = homeTab:CreateLabel("Version 08.25.26-1100P", "info")
+
 -- #=# Changelog Tab #=# -- 
 local changelogTab = Window:CreateTab("Changelog", "list")
 
