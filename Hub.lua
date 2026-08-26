@@ -485,3 +485,4 @@ local DestroyUI = settingsTab:CreateButton({
         Rayfield:Destroy()
     end,
 })
+Rayfield:LoadConfiguration()
