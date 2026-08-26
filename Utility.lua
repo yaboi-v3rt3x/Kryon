@@ -76,6 +76,11 @@ local ProductFucker = homeTab:CreateButton({
    end,
 })
 
+-- #=# Changelog Tab #=# -- 
+local changelogTab = Window:CreateTab("Changelog", "list")
+
+local v0825261100P = changelogTab:CreateParagraph({Title = "Version 08.25.26-1100P", Content = "- Created Utility Hub\n+ Added Infinite Yeild\n+ Added Dex++\n+ Added Cobalt\n+ Added Subplace Finder\n+ Added Product Fucker"})
+
 -- #=# Settings Tab #=# --
 local settingsTab = Window:CreateTab("Settings", "settings")
 
