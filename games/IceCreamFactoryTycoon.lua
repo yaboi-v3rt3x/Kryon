@@ -135,3 +135,5 @@ local versionLabel = hubTab:CreateLabel("Version 08.25.26-600P", "info")
 local changelogTab = Window:CreateTab("Changelog", "list")
 
 local v082526600P = changelogTab:CreateParagraph({Title = "Version 08.25.26-600P", Content = "- Created Sub Hub"})
+
+Rayfield:LoadConfiguration()
